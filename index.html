@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="Author" content="Aarya Niroula">
+    <meta name="description" content="Home page HTML">
+    <meta http-equiv="refresh" content="10000">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Last40</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<body>
+    <header class="header">
+        <div class="header-1">
+            <a href="index.html" class="logo"><img src="pictures/logo.png" alt="Logo"></a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Service</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="icons">
+                <a href="#" class="fas fa-user"></a>
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-bell"></a>
+            </div>
+    </header>
+    
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('pictures/background.jpg');"></div>
+            <div class="carousel-item" style="background-image: url('pictures/amazon.jpg');"></div>
+            <div class="carousel-item" style="background-image: url('pictures/shein.jpg');"></div>
+            <div class="carousel-item" style="background-image: url('pictures/doordash.jpg');"></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">PREV</button>
+        <button class="next" onclick="moveSlide(1)">NEXT</button>
+    </div>
+    <div class="review-card">
+        <div class="stars">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <p><strong>4190 jobs</strong> completed successfully with <strong>97.4%</strong> 5 star reviews</p>
+        <div class="shopify-logo">
+            <img src="pictures/shoppify-logo.png" alt="Shopify">
+            <span><strong>shopify</strong></span>
+        </div>
+    </div>
+    <div class="companylogos">
+      <a href="www.facebook.com"><img src="pictures/PU.png"></a>
+      <a href="www.facebook.com"><img src="pictures/um.png"></a>
+      <a href="www.facebook.com"><img src="pictures/out of the sand box.jpg"></a>
+      <a href="www.facebook.com"><img src="pictures/tt.png"></a>
+    </div>
+
+    <div class="container">
+        <!-- Dot patterns -->
+        <div class="dot-pattern dot-pattern-topleft"></div>
+        <div class="dot-pattern dot-pattern-topright"></div>
+        <div class="dot-pattern dot-pattern-bottomleft"></div>
+        
+        <div class="left-section">
+            <!-- Floating bonsai on top left -->
+            <div class="floating-bonsai">
+                <img src="pictures/upperbonsai.jpg" alt="Bonsai">
+                <div class="floating-bonsai-caption">
+                    <div class="caption-text">Lorem ipsum<br>dolor sit</div>
+                    <div class="plus-icon">+</div>
+                </div>
+            </div>
+            
+            <!-- Cart button -->
+            <button class="cart-button">
+                <span class="cart-icon">🛒</span>
+            </button>
+            
+            <!-- Main product section -->
+            <div class="main-product">
+                <img src="pictures/middlebonsai.jpg" alt="Chinese Elm Bonsai on table" class="main-product-image">
+                <div class="product-overlay">
+                    <h2 class="product-title1">Chinese Elm <br>Bonsai</h2>
+                    <button class="buy-button">Buy now</button>
+                </div>
+            </div>
+            
+            <!-- Mobile preview -->
+            <div class="mobile-preview">
+                <img src="pictures/siddebonsai.jpg" alt="Bonsai on mobile" class="mobile-image">
+                <div class="mobile-title">Chinese Elm Bonsai</div>
+                <button class="mobile-button">Buy now</button>
+            </div>
+            
+            <!-- WooCommerce box -->
+            <div class="woocommerce-box">
+                <img src="pictures/user-avatar.jpg" alt="Profile" class="profile-image">
+                <div class="woo-info">
+                    <div class="woo-title">Set up an online<br>WooCommerce store</div>
+                    <div class="price-label">Quoted</div>
+                    <div class="price-tag">$125</div>
+                </div>
+                <div class="check-button">✓</div>
+            </div>
+        </div>
+        
+        <div class="right-section">
+            <h1 class="right-title">Join, <strong>2000+</strong> Shopify store owners using Storetasker to build their dream store</h1>
+            
+            <div class="get-estimate">
+                <div class="estimate-text">Get a Free Estimate</div>
+                <span class="arrow-icon2">→</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="services-section">
+        <div class="section-header">
+            <div class="header-text">
+                <div class="marketplace-link">START BROWSING THE MARKETPLACE</div>
+                <h2 class="section-title">Most Popular<br> Shopify Services</h2>
+            </div>
+            <a href="#" class="view-all-button">
+                View All Services
+                <span class="arrow-icon1">→</span>
+            </a>
+        </div>
+        
+        <div class="tabs-container">
+            <ul class="tabs">
+                <li class="tab-item"><a href="#" class="tab-link">EMAIL</a></li>
+                <li class="tab-item"><a href="#" class="tab-link">Social Media</a></li>
+                <li class="tab-item"><a href="#" class="tab-link">ADVERTISING</a></li>
+                <li class="tab-item"><a href="#" class="tab-link">CONVERSION</a></li>
+                <li class="tab-item"><a href="#" class="tab-link">FEATURES</a></li>
+                <li class="tab-item active"><a href="#" class="tab-link">DESIGN</a></li>
+                <li class="tab-item"><a href="#" class="tab-link">GROWTH</a></li>
+                <li class="tab-item"><a href="#" class="tab-link">SEO</a></li>
+
+            </ul>
+        </div>
+        
+    </section>
+   
+<!-- SERVICESSS -->
+    <div class="container2">
+        <div class="header1">
+            <h1>Last 40, <br>by Shopify</h1>
+        </div>
+        <div class="grid">
+            <!-- Column 1  -->
+            <div class="column">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/1.png" alt="Mailchimp Integration">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">
+                            <span class="product-tag">Email Marketing</span>
+                            <span class="product-delivery">4 Days</span>
+                        </div>
+                        <h3 class="product-title">Mailchimp Integration</h3>
+                        <div class="product-price-rating">
+                            <ul class="pricee-ratee">
+                            <li class="price-rate"><span class="product-price">$325.00</span></li>
+                            <li class="price-rate"><span class="product-rating">★★★★★</span></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/4.png" alt="Mailchimp Integration">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">
+                            <span class="product-tag">Email Marketing</span>
+                            <span class="product-delivery">4 Days</span>
+                        </div>
+                        <h3 class="product-title">Mailchimp Integration</h3>
+                        <div class="product-price-rating">
+                            <ul class="pricee-ratee">
+                            <li class="price-rate"><span class="product-price">$325.00</span></li>
+                            <li class="price-rate"><span class="product-rating">★★★★★</span></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Column 2  -->
+            <div class="column">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/2.png" alt="Xmarine development sub-hire">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">
+                            <span class="product-tag">Email Marketing</span>
+                            <span class="product-delivery">4 Days</span>
+                        </div>
+                        <h3 class="product-title">Xmarine development sub-hire</h3>
+                        <div class="product-price-rating">
+                            <ul class="pricee-ratee">
+                            <li class="price-rate"><span class="product-price">$325.00</span></li>
+                            <li class="price-rate"><span class="product-rating">★★★★★</span></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/5.png" alt="Mailchimp Integration">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">
+                            <span class="product-tag">Email Marketing</span>
+                            <span class="product-delivery">4 Days</span>
+                        </div>
+                        <h3 class="product-title">Mailchimp Integration</h3>
+                        <div class="product-price-rating">
+                            <ul class="pricee-ratee">
+                            <li class="price-rate"><span class="product-price">$325.00</span></li>
+                            <li class="price-rate"><span class="product-rating">★★★★★</span></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Column 3  -->
+            <div class="column">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/3.png" alt="Mailchimp Integration">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">
+                            <span class="product-tag">Email Marketing</span>
+                            <span class="product-delivery">4 Days</span>
+                        </div>
+                        <h3 class="product-title">Mailchimp Integration</h3>
+                        <div class="product-price-rating">
+                            <ul class="pricee-ratee">
+                            <li class="price-rate"><span class="product-price">$325.00</span></li>
+                            <li class="price-rate"><span class="product-rating">★★★★★</span></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/6.png" alt="Mailchimp Integration">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">
+                            <span class="product-tag">Email Marketing</span>
+                            <span class="product-delivery">4 Days</span>
+                        </div>
+                        <h3 class="product-title">Mailchimp Integration</h3>
+                        <div class="product-price-rating">
+                            <ul class="pricee-ratee">
+                            <li class="price-rate"><span class="product-price">$325.00</span></li>
+                            <li class="price-rate"><span class="product-rating">★★★★★</span></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+     <div class="container">
+        <section class="hero">
+            <div class="hero-image">
+                <img src="pictures/woman.png" alt="A person working on a laptop">
+            </div>
+            <div class="hero-content">
+                <div class="tag">BECOME PART OF THE TEAM</div>
+                <h1 class="hero-title">Become a</h1>
+                <h1 class="hero-title1">Storetasker Expert</h1>
+                <p class="hero-description">We are tight nit community of shopify experts helping out store owners with digital tasks.</p>
+                <div class="features">
+                    <div class="feature">
+                        <span class="check-icon">✓</span>
+                        <span>Satisfaction guaranteed</span>
+                    </div>
+                    <div class="feature">
+                        <span class="check-icon">✓</span>
+                        <span>Fair pricing</span>
+                    </div>
+                    <div class="feature">
+                        <span class="check-icon">✓</span>
+                        <span>Fast turnaround</span>
+                    </div>
+                </div>
+                <a href="#" class="cta-button">Become an Expert →</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="benefits">
+        <div class="container1">
+            <h4 class="benefits-tag">BENEFITS OF STORETASKER</h4>
+            <h2 class="benefits-title">Storetasker makes it<br> fast and easy</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">1</div>
+                    <div class="benefit-icon">
+                        <img src="pictures/point.png">
+                    <h3 class="benefit-title">Easy to Use</h3>
+                    <p class="benefit-description">Hassle-free setup and simple job <br>
+                        management from start to finish.</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">2</div>
+                    <div class="benefit-icon">
+                        <img src="pictures/piggy.png">
+                    
+                    <h3 class="benefit-title">Affordable Rates</h3>
+                    <p class="benefit-description">Predictable work rates at $65/hour.<br>
+                        Ideal for growing Shopify stores.</p>
+                </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">3</div>
+                    <div class="benefit-icon">
+                        <img src="pictures/timer.png">
+                    <h3 class="benefit-title">Fast Turnaround</h3>
+                    <p class="benefit-description">No more flakey developers.<br> Storetasker developers get<br> things done on time.</p>
+                </div>
+
+                </div>
+            </div>
+        </div>
+            <a href="#" class="secondary-cta">
+                Get a Free Estimate
+                <span class="arrow-icon">→</span>
+            </a>
+        
+    </section>
+
+    <div class="container3">
+        <!-- Left Section -->
+        <div class="left-section1">
+          <div class="heading-section">
+            <div class="accent-text">WHAT OTHERS ARE SAYING ABOUT STORETASKER</div>
+            <h1 class="main-heading">Why Storetasker is<br>the <strong>#1 Shopify<br>outsourcing service</strong></h1>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="stars">★ ★ ★ ★ ★</div>
+            <p class="testimonial-text">Storetasker delivered on time, within budget and went above and beyond to make my app a success...</p>
+            <div class="user">
+              <img src="pictures/user1.png" alt="User avatar" class="user-avatar">
+              <div class="user-info">
+                <div class="user-name">Natalie Hernandez</div>
+                <div class="user-title">CEO @Stockey</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Section -->
+        <div class="right-section1">
+          <div class="testimonial-card">
+            <div class="stars">★ ★ ★ ★ ★</div>
+            <p class="testimonial-text">Storetasker delivered on time, within budget and went above and beyond to make my app a success...</p>
+            <div class="user">
+              <img src="pictures/user2.png" alt="User avatar" class="user-avatar">
+              <div class="user-info">
+                <div class="user-name">Natalie Hernandez</div>
+                <div class="user-title">CEO @Stockey</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="stars">★ ★ ★ ★ ★</div>
+            <p class="testimonial-text">Storetasker delivered on time, within budget and went above and beyond to make my app a success...</p>
+            <div class="user">
+              <img src="pictures/user3.png" alt="User avatar" class="user-avatar">
+              <div class="user-info">
+                <div class="user-name">Natalie Hernandez</div>
+                <div class="user-title">CEO @Stockey</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<section class="footer">
+      <div class="footer-container">
+        <!-- Header section with CTA buttons -->
+        <div class="header-section">
+            <h2 class="main-heading1">A better way to hire<br>Shopify Help</h2>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-outline btn-arrow">Become an Expert</a>
+                <a href="#" class="btn btn-primary btn-arrow">Get a Free Estimate</a>
+            </div>
+        </div>
+
+        <!-- Divider line -->
+        <div class="divider"></div>
+
+        <!-- Main content section -->
+        <div class="content-section">
+            <!-- Logo and description -->
+            <div class="logo-section">
+               
+                <img src="pictures/storetasker.png" alt="Storetasker" class="logo">
+
+                <p class="logo-description">The #1 Shopify outsourcing marketplace. Proudly built by<br> Carson, highest rated Shopify<br> expert team in the world.</p>
+                <div class="payment-icons">
+                    <img src="pictures/mastercard.png" alt="Mastercard" class="payment-icon">
+                    <img src="pictures/visacard.png" alt="Visa" class="payment-icon">
+                    <img src="pictures/paypal.png" alt="PayPal" class="payment-icon">
+                </div>
+            </div>
+
+            <!-- Navigation columns -->
+            <div class="nav-columns">
+                <!-- Company column -->
+                <div class="nav-column">
+                    <h3 class="column-title">Company</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect column -->
+                <div class="nav-column">
+                    <h3 class="column-title">Connect</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">Our Community</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Facebook</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Experts column -->
+                <div class="nav-column">
+                    <h3 class="column-title">Experts</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">Apply as an Expert</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Vetting Guidelines</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Expert Sign In</a></li>
+                    </ul>
+                </div>
+
+                <!-- Stats column -->
+                <div class="nav-column stats-section">
+                    <div class="star-rating">★ ★ ★ ★ ★</div>
+                    <p class="stats-text">4190 jobs completed successfully<br> with 97.4% 5-star reviews</p>
+                    <img src="pictures/shoppify-logo.png" alt="Shopify" class="shopify-icon" >
+                    <span><strong>shopify</strong></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+            <p>© 2017 - Storetasker - All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Privacy</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+        let index = 0;
+        function moveSlide(direction) {
+            const items = document.querySelectorAll(".carousel-item");
+            index = (index + direction + items.length) % items.length;
+            document.querySelector(".carousel-inner").style.transform = `translateX(-${index * 100}%)`;
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
