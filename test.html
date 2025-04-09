@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Hamburger Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            position: absolute;
+            padding: 10px 0;
+            z-index: 1000;
+            background-color: #333; /* Added for visibility */
+        }
+
+        .header-1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .icons a {
+            color: white;
+            margin-left: 15px;
+            font-size: 1.3rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 23px;
+            font-size: 1.17rem;
+            overflow: hidden;
+        }
+
+        /* Hamburger menu styles */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .header-1 {
+                padding: 10px 20px;
+            }
+
+            .hamburger {
+                display: block;
+                order: 1;
+            }
+
+            .logo {
+                order: 2;
+                margin: 0 auto;
+            }
+
+            .icons {
+                order: 3;
+            }
+
+            .navbar {
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                transform: translateY(-150%);
+                transition: transform 0.3s ease-in-out;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .navbar.active {
+                transform: translateY(0);
+            }
+
+            .navbar a {
+                margin: 10px 0;
+                padding: 10px 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .icons a {
+                margin-left: 10px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-1">
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="index.html" class="logo"><img src="pictures/logo.png" alt="Logo"></a>
+            <div class="icons">
+                <a href="#" class="fas fa-user"></a>
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-bell"></a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Service</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navbar = document.querySelector('.navbar');
+            
+            hamburger.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+                
+                // Change hamburger icon to X when menu is open
+                const icon = hamburger.querySelector('i');
+                if (navbar.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!navbar.contains(event.target) && !hamburger.contains(event.target) && navbar.classList.contains('active')) {
+                    navbar.classList.remove('active');
+                    const icon = hamburger.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
