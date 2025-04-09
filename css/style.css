@@ -683,6 +683,7 @@ body {
   font-size: 20px;
 }
 
+
 /* Large desktop screens */
 @media (min-width: 1200px) {
   .container {
@@ -919,7 +920,7 @@ body {
   .mobile-button {
     margin-left: 8px;
     padding: 6px 20px;
-    width: 90px;
+    width: 100px;
   }
 
   .product-title1 {
